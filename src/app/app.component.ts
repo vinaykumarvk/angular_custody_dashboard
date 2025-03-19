@@ -8,14 +8,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [RouterOutlet, RouterLink, CommonModule],
   template: `
-    <div class="main-container">
-      <div class="sidebar">
-        <h1>Operations Dashboard</h1>
-      </div>
-      <div class="content">
-        <!-- Your existing HTML content here -->
-      </div>
-    </div>
+    <router-outlet></router-outlet>
   `
 })
 export class AppComponent {
