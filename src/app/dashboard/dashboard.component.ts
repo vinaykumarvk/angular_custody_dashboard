@@ -7,15 +7,6 @@ import { CommonModule } from '@angular/common';
   selector: 'app-dashboard',
   standalone: true,
   imports: [RouterLink, CommonModule],
-  templateUrl: '../app.component.html',
-  styleUrls: ['../app.component.css']
-})
-export import { RouterLink } from '@angular/router';
-
-@Component({
-  selector: 'app-dashboard',
-  standalone: true,
-  imports: [RouterLink, CommonModule],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
