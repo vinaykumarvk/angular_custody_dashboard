@@ -1,0 +1,116 @@
+<!-- Loading State -->
+<div class="loading-container" *ngIf="loading">
+  <div class="loading-spinner"></div>
+  <p>Loading trades...</p>
+</div>
+
+<!-- Error State -->
+<div class="error-container" *ngIf="error">
+  <p class="error-message">{{error}}</p>
+</div>
+
+<!-- Single Trade View -->
+<ng-container *ngIf="trade && !loading">
+  <div class="trade-details">
+    <h2>Trade Details</h2>
+    <div class="table-container">
+      <table class="details-table">
+        <tr>
+          <th>Trade ID</th>
+          <td>{{trade.tradeId}}</td>
+        </tr>
+        <tr>
+          <th>Security Name</th>
+          <td>{{trade.securityName}}</td>
+        </tr>
+        <tr>
+          <th>Total Amount</th>
+          <td>{{trade.totalAmount | currency:'USD'}}</td>
+        </tr>
+        <tr>
+          <th>Trade Date</th>
+          <td>{{trade.tradeDate | date:'shortDate'}}</td>
+        </tr>
+        <tr>
+          <th>Status</th>
+          <td>{{trade.status}}</td>
+        </tr>
+        <tr>
+          <th>Counterparty</th>
+          <td>{{trade.counterparty}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</ng-container>
+
+<!-- Trades List View -->
+<ng-container *ngIf="trades.length > 0 && !loading">
+  <div class="trades-list">
+    <h2>{{status}} Trades</h2>
+    <div class="table-container">
+      <table class="trades-table">
+        <thead>
+          <tr>
+            <th>Trade ID</th>
+            <th>Security Name</th>
+            <th>Total Amount</th>
+            <th>Trade Date</th>
+            <th>Status</th>
+            <th>Counterparty</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let trade of trades; let i = index">
+            <tr [class.expanded]="expandedRow === i" 
+                [class.alternate]="i % 2 === 1"
+                (click)="toggleRow(i)" 
+                class="clickable-row">
+              <td>{{trade.tradeId}}</td>
+              <td>{{trade.securityName}}</td>
+              <td>{{trade.totalAmount | currency:'USD'}}</td>
+              <td>{{trade.tradeDate | date:'shortDate'}}</td>
+              <td>
+                <span class="status-badge" [class]="trade.status.toLowerCase()">
+                  {{trade.status}}
+                </span>
+              </td>
+              <td>{{trade.counterparty}}</td>
+            </tr>
+            <tr *ngIf="expandedRow === i" class="expanded-details" [class.alternate]="i % 2 === 1">
+              <td colspan="6">
+                <div class="expanded-content">
+                  <div class="detail-group">
+                    <label>Quantity:</label>
+                    <span>{{trade.quantity}}</span>
+                  </div>
+                  <div class="detail-group">
+                    <label>Price:</label>
+                    <span>{{trade.price | currency:'USD'}}</span>
+                  </div>
+                  <div class="detail-group">
+                    <label>Settlement Date:</label>
+                    <span>{{trade.settlementDate | date:'shortDate'}}</span>
+                  </div>
+                  <div class="detail-group">
+                    <label>Currency:</label>
+                    <span>{{trade.currency}}</span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ng-container>
+
+<!-- No Data State -->
+<div class="no-data-container" *ngIf="!loading && !error && trades.length === 0 && !trade">
+  <p>No trades found.</p>
+</div>
+
+<div class="back-button-container">
+  <button class="back-button" routerLink="/">Back to Dashboard</button>
+</div> 

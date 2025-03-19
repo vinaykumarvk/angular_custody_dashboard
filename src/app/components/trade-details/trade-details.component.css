@@ -1,0 +1,234 @@
+/* Loading State */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error State */
+.error-container {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff3f3;
+  border: 1px solid #ffcdd2;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: #d32f2f;
+  margin: 0;
+}
+
+/* No Data State */
+.no-data-container {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.trade-details, .trades-list {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #2c3e50;
+  border-radius: 8px 8px 0 0;
+  margin: 0;
+}
+
+.table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+/* Tables Common Styles */
+.details-table, .trades-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+/* Single Trade Details Table */
+.details-table th {
+  text-align: left;
+  padding: 12px 20px;
+  background-color: #34495e;
+  color: white;
+  font-weight: 600;
+  width: 200px;
+}
+
+.details-table td {
+  padding: 12px 20px;
+  color: #333;
+}
+
+.details-table tr:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+/* Trades List Table */
+.trades-table {
+  min-width: 800px;
+}
+
+.trades-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #34495e;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #2c3e50;
+}
+
+.trades-table tbody td {
+  padding: 15px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+/* Alternating Rows */
+.trades-table tbody tr.alternate {
+  background-color: #f8f9fa;
+}
+
+/* Clickable Rows */
+.clickable-row {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clickable-row:hover {
+  background-color: #e9ecef !important;
+}
+
+.clickable-row.expanded {
+  background-color: #e9ecef !important;
+}
+
+/* Expanded Row Details */
+.expanded-details {
+  background-color: inherit;
+}
+
+.expanded-content {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.detail-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.detail-group label {
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.9em;
+}
+
+.detail-group span {
+  color: #333;
+}
+
+/* Status Badge */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.status-badge.unmapped {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.mapped {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.settled {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+/* Back Button */
+.back-button-container {
+  margin: 20px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .trade-details, .trades-list {
+    padding: 10px;
+  }
+  
+  .details-table th {
+    width: 150px;
+    padding: 10px 15px;
+  }
+  
+  .details-table td {
+    padding: 10px 15px;
+  }
+  
+  .expanded-content {
+    grid-template-columns: 1fr;
+  }
+} 

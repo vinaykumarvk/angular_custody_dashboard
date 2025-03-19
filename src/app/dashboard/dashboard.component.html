@@ -83,17 +83,17 @@
         <!-- Trades Section -->
         <h3 class="subsection-header">Trades</h3>
         <div class="cards-container">
-          <div class="card" [routerLink]="['/detail']" role="button">
-            <h3>Unswept Trades</h3>
-            <span class="number">15</span>
+          <div class="card" [routerLink]="['/trades', 'UNMAPPED']" role="button">
+            <h3>Unmapped</h3>
+            <span class="number">{{unmappedTrades.length}}</span>
           </div>
-          <div class="card" [routerLink]="['/detail']" role="button">
-            <h3>Misport Trades</h3>
-            <span class="number">7</span>
+          <div class="card" [routerLink]="['/trades', 'UNMAPPED']" role="button">
+            <h3>Misport</h3>
+            <span class="number">{{unmappedTrades.length}}</span>
           </div>
-          <div class="card" [routerLink]="['/detail']" role="button">
-            <h3>Settlement Due</h3>
-            <span class="number">23</span>
+          <div class="card" [routerLink]="['/trades', 'SETTLED']" role="button">
+            <h3>Settled</h3>
+            <span class="number">{{settledTrades.length}}</span>
           </div>
         </div>
 
@@ -150,6 +150,33 @@
           <div class="card" [routerLink]="['/detail']" role="button">
             <h3>Pending Payments</h3>
             <span class="number">42</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section trades">
+        <h3>Trades</h3>
+        <div class="cards">
+          <div class="card" *ngFor="let trade of unmappedTrades">
+            <a [routerLink]="['/trade', trade.id]" class="card-link">
+              <h4>Unmapped Trade</h4>
+              <p>{{trade.securityName}}</p>
+              <p>{{trade.tradeId}}</p>
+            </a>
+          </div>
+          <div class="card" *ngFor="let trade of mappedTrades">
+            <a [routerLink]="['/trade', trade.id]" class="card-link">
+              <h4>Mapped Trade</h4>
+              <p>{{trade.securityName}}</p>
+              <p>{{trade.tradeId}}</p>
+            </a>
+          </div>
+          <div class="card" *ngFor="let trade of settledTrades">
+            <a [routerLink]="['/trade', trade.id]" class="card-link">
+              <h4>Settled Trade</h4>
+              <p>{{trade.securityName}}</p>
+              <p>{{trade.tradeId}}</p>
+            </a>
           </div>
         </div>
       </div>

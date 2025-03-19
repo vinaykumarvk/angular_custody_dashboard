@@ -1,0 +1,69 @@
+{
+  "trades": [
+    {
+      "id": "1",
+      "tradeId": "T2024001",
+      "securityName": "Apple Inc.",
+      "quantity": 1000,
+      "price": 175.34,
+      "tradeDate": "2024-03-20",
+      "settlementDate": "2024-03-22",
+      "counterparty": "Goldman Sachs",
+      "status": "UNMAPPED",
+      "currency": "USD",
+      "totalAmount": 175340
+    },
+    {
+      "id": "2",
+      "tradeId": "T2024002",
+      "securityName": "Microsoft Corp",
+      "quantity": 500,
+      "price": 420.45,
+      "tradeDate": "2024-03-20",
+      "settlementDate": "2024-03-22",
+      "counterparty": "JP Morgan",
+      "status": "MAPPED",
+      "currency": "USD",
+      "totalAmount": 210225
+    },
+    {
+      "id": "3",
+      "tradeId": "T2024003",
+      "securityName": "Tesla Inc",
+      "quantity": 200,
+      "price": 172.82,
+      "tradeDate": "2024-03-19",
+      "settlementDate": "2024-03-21",
+      "counterparty": "Morgan Stanley",
+      "status": "SETTLED",
+      "currency": "USD",
+      "totalAmount": 34564
+    },
+    {
+      "id": "4",
+      "tradeId": "T2024004",
+      "securityName": "Amazon.com Inc",
+      "quantity": 300,
+      "price": 178.15,
+      "tradeDate": "2024-03-20",
+      "settlementDate": "2024-03-22",
+      "counterparty": "Citigroup",
+      "status": "UNMAPPED",
+      "currency": "USD",
+      "totalAmount": 53445
+    },
+    {
+      "id": "5",
+      "tradeId": "T2024005",
+      "securityName": "Google Inc",
+      "quantity": 150,
+      "price": 147.60,
+      "tradeDate": "2024-03-19",
+      "settlementDate": "2024-03-21",
+      "counterparty": "Bank of America",
+      "status": "MAPPED",
+      "currency": "USD",
+      "totalAmount": 22140
+    }
+  ]
+} 
