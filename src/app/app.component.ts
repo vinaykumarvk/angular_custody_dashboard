@@ -7,9 +7,17 @@ import { CommonModule } from '@angular/common';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, RouterLink, CommonModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `
+    <div class="main-container">
+      <div class="sidebar">
+        <h1>Operations Dashboard</h1>
+      </div>
+      <div class="content">
+        <!-- Your existing HTML content here -->
+      </div>
+    </div>
+  `
 })
 export class AppComponent {
-  title = 'Custody Dashboard';
+  title = 'Operations Dashboard';
 }
