@@ -17,3 +17,12 @@ import { Component } from '@angular/core';
   `]
 })
 export class DetailComponent {}
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-detail',
+  standalone: true,
+  template: '<div>Detail page</div>'
+})
+export class DetailComponent {
+}

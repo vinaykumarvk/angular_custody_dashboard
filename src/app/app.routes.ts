@@ -1,9 +1,8 @@
-import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
 import { Routes } from '@angular/router';
+import { DetailComponent } from './detail/detail.component';
 
 export const routes: Routes = [
-  { path: 'detail', component: null },
+  { path: 'detail', component: DetailComponent },
   { path: '', redirectTo: '/', pathMatch: 'full' }
 ];
