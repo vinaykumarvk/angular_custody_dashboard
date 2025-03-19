@@ -65,11 +65,36 @@ header h1 {
   margin-bottom: 20px;
 }
 
+.section-header {
+  background: #34495e;
+  margin: -20px -20px 20px -20px;
+  padding: 15px 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+.section-header h2 {
+  color: white !important;
+  margin: 0 !important;
+}
+
 .card {
   flex: 1;
   background: #f8f9fa;
   border-radius: 6px;
   padding: 15px;
+  border-left: 4px solid;
+}
+
+.card:nth-child(1) {
+  border-left-color: #e74c3c;
+}
+
+.card:nth-child(2) {
+  border-left-color: #3498db;
+}
+
+.card:nth-child(3) {
+  border-left-color: #2ecc71;
 }
 
 .card h3 {
