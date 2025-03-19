@@ -1,149 +1,151 @@
-<div class="container">
-  <header>
-    <h1>{{title}}</h1>
-  </header>
+<div class="app-container">
   <nav class="sidebar">
     <ul class="menu">
       <li class="menu-item">Operations Dashboard</li>
     </ul>
   </nav>
-  <div class="content">
-    <div class="section">
-      <div class="section-header">
-        <h2>Activities</h2>
-      </div>
-      <div class="activities-container">
-        <div class="activity-column">
-          <h3>To be Approved (174)</h3>
-          <div class="activity-item">
-            <span>Client</span>
-            <span>20</span>
+  <div class="main-content">
+    <header>
+      <h1>{{title}}</h1>
+    </header>
+    <div class="content">
+      <div class="section">
+        <div class="section-header">
+          <h2>Activities</h2>
+        </div>
+        <div class="activities-container">
+          <div class="activity-column">
+            <h3>To be Approved (174)</h3>
+            <div class="activity-item">
+              <span>Client</span>
+              <span>20</span>
+            </div>
+            <div class="activity-item">
+              <span>Client Exchange</span>
+              <span>30</span>
+            </div>
+            <div class="activity-item">
+              <span>Client Depository</span>
+              <span>1</span>
+            </div>
+            <div class="activity-item">
+              <span>Party</span>
+              <span>34</span>
+            </div>
+            <div class="activity-item">
+              <span>Bank Account</span>
+              <span>89</span>
+            </div>
           </div>
-          <div class="activity-item">
-            <span>Client Exchange</span>
-            <span>30</span>
+          <div class="activity-column">
+            <h3>Processes Done Today</h3>
+            <div class="activity-item">SEBI Message</div>
+            <div class="activity-item">Global settlement</div>
+            <div class="activity-item">Price upload</div>
           </div>
-          <div class="activity-item">
-            <span>Client Depository</span>
-            <span>1</span>
-          </div>
-          <div class="activity-item">
-            <span>Party</span>
-            <span>34</span>
-          </div>
-          <div class="activity-item">
-            <span>Bank Account</span>
-            <span>89</span>
+          <div class="activity-column">
+            <h3>Processes Due Today</h3>
+            <div class="activity-item">DP instructions</div>
+            <div class="activity-item">MFTS</div>
+            <div class="activity-item">Early Payout Report</div>
+            <div class="activity-item">Fund Obligation Report</div>
           </div>
         </div>
-        <div class="activity-column">
-          <h3>Processes Done Today</h3>
-          <div class="activity-item">SEBI Message</div>
-          <div class="activity-item">Global settlement</div>
-          <div class="activity-item">Price upload</div>
-        </div>
-        <div class="activity-column">
-          <h3>Processes Due Today</h3>
-          <div class="activity-item">DP instructions</div>
-          <div class="activity-item">MFTS</div>
-          <div class="activity-item">Early Payout Report</div>
-          <div class="activity-item">Fund Obligation Report</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <h2>Exceptions</h2>
       </div>
 
-      <!-- Holdings Section -->
-      <h3 class="subsection-header">Holdings</h3>
-      <div class="cards-container">
-        <div class="card">
-          <h3>Pending Reconciliation & Valuation</h3>
-          <span class="number">64</span>
+      <div class="section">
+        <div class="section-header">
+          <h2>Exceptions</h2>
         </div>
-        <div class="card">
-          <h3>Unmatched Inventory RDCs</h3>
-          <span class="number">8</span>
-        </div>
-        <div class="card">
-          <h3>Positions mismatch OSLs</h3>
-          <span class="number">12</span>
-        </div>
-      </div>
 
-      <!-- Trades Section -->
-      <h3 class="subsection-header">Trades</h3>
-      <div class="cards-container">
-        <div class="card">
-          <h3>Unswept Trades</h3>
-          <span class="number">15</span>
+        <!-- Holdings Section -->
+        <h3 class="subsection-header">Holdings</h3>
+        <div class="cards-container">
+          <div class="card">
+            <h3>Pending Reconciliation & Valuation</h3>
+            <span class="number">64</span>
+          </div>
+          <div class="card">
+            <h3>Unmatched Inventory RDCs</h3>
+            <span class="number">8</span>
+          </div>
+          <div class="card">
+            <h3>Positions mismatch OSLs</h3>
+            <span class="number">12</span>
+          </div>
         </div>
-        <div class="card">
-          <h3>Misport Trades</h3>
-          <span class="number">7</span>
-        </div>
-        <div class="card">
-          <h3>Settlement Due</h3>
-          <span class="number">23</span>
-        </div>
-      </div>
 
-      <!-- Communication Section -->
-      <h3 class="subsection-header">Communication</h3>
-      <div class="cards-container">
-        <div class="card">
-          <h3>Mails Sent</h3>
-          <span class="number">64</span>
+        <!-- Trades Section -->
+        <h3 class="subsection-header">Trades</h3>
+        <div class="cards-container">
+          <div class="card">
+            <h3>Unswept Trades</h3>
+            <span class="number">15</span>
+          </div>
+          <div class="card">
+            <h3>Misport Trades</h3>
+            <span class="number">7</span>
+          </div>
+          <div class="card">
+            <h3>Settlement Due</h3>
+            <span class="number">23</span>
+          </div>
         </div>
-        <div class="card">
-          <h3>Mails Not Sent</h3>
-          <span class="number">73</span>
-        </div>
-        <div class="card">
-          <h3>Report Failure</h3>
-          <span class="number">5</span>
-        </div>
-      </div>
 
-      <!-- Corporate Actions Section -->
-      <h3 class="subsection-header">Corporate Actions</h3>
-      <div class="cards-container">
-        <div class="card">
-          <h3>New Event due Today</h3>
-          <span class="number">68</span>
+        <!-- Communication Section -->
+        <h3 class="subsection-header">Communication</h3>
+        <div class="cards-container">
+          <div class="card">
+            <h3>Mails Sent</h3>
+            <span class="number">64</span>
+          </div>
+          <div class="card">
+            <h3>Mails Not Sent</h3>
+            <span class="number">73</span>
+          </div>
+          <div class="card">
+            <h3>Report Failure</h3>
+            <span class="number">5</span>
+          </div>
         </div>
-        <div class="card">
-          <h3>Events Payment Due Today</h3>
-          <span class="number">62</span>
-        </div>
-      </div>
 
-      <!-- Tickets Section -->
-      <h3 class="subsection-header">Tickets</h3>
-      <div class="cards-container">
-        <div class="card">
-          <h3>Tickets Breached Limit</h3>
-          <span class="number">27</span>
+        <!-- Corporate Actions Section -->
+        <h3 class="subsection-header">Corporate Actions</h3>
+        <div class="cards-container">
+          <div class="card">
+            <h3>New Event due Today</h3>
+            <span class="number">68</span>
+          </div>
+          <div class="card">
+            <h3>Events Payment Due Today</h3>
+            <span class="number">62</span>
+          </div>
         </div>
-        <div class="card">
-          <h3>Tickets closed due today</h3>
-          <span class="number">14</span>
-        </div>
-        <div class="card">
-          <h3>Other open tickets</h3>
-          <span class="number">31</span>
-        </div>
-      </div>
 
-      <!-- Payments Section -->
-      <h3 class="subsection-header">Payments</h3>
-      <div class="cards-container">
-        <div class="card">
-          <h3>Pending Payments</h3>
-          <span class="number">42</span>
+        <!-- Tickets Section -->
+        <h3 class="subsection-header">Tickets</h3>
+        <div class="cards-container">
+          <div class="card">
+            <h3>Tickets Breached Limit</h3>
+            <span class="number">27</span>
+          </div>
+          <div class="card">
+            <h3>Tickets closed due today</h3>
+            <span class="number">14</span>
+          </div>
+          <div class="card">
+            <h3>Other open tickets</h3>
+            <span class="number">31</span>
+          </div>
+        </div>
+
+        <!-- Payments Section -->
+        <h3 class="subsection-header">Payments</h3>
+        <div class="cards-container">
+          <div class="card">
+            <h3>Pending Payments</h3>
+            <span class="number">42</span>
+          </div>
         </div>
       </div>
     </div>
