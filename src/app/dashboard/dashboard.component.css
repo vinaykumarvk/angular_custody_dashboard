@@ -5,41 +5,41 @@
 
 .section {
   margin-bottom: 30px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .section-header {
-  margin-bottom: 20px;
+  background: #2448a5;
+  padding: 15px 20px;
 }
 
 .section-header h2 {
-  color: #2448a5;
-  font-size: 24px;
+  color: white;
   margin: 0;
+  font-size: 18px;
 }
 
 .activities-container {
-  display: flex;
-  gap: 20px;
-}
-
-.activity-column {
-  flex: 1;
   padding: 20px;
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .activity-column h3 {
   color: #2448a5;
   margin: 0 0 20px 0;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
 }
 
 .card {
   background: #f8f9fa;
   padding: 15px;
-  margin-bottom: 15px;
   border-radius: 6px;
   border-left: 4px solid #2448a5;
   cursor: pointer;
@@ -55,7 +55,7 @@
 .card h3 {
   margin: 0;
   color: #333;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .card .number {
