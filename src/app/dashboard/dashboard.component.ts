@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -12,4 +11,9 @@ import { CommonModule } from '@angular/common';
 })
 export class DashboardComponent {
   title = 'Operations Dashboard';
+  isSidebarCollapsed = false;
+
+  toggleSidebar() {
+    this.isSidebarCollapsed = !this.isSidebarCollapsed;
+  }
 }
