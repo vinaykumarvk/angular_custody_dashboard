@@ -120,19 +120,32 @@ header h1 {
   background: #f8f9fa;
   border-radius: 6px;
   padding: 15px;
+  border-left: 4px solid;
+}
+
+.activity-column:nth-child(1) {
+  border-left-color: #e74c3c;
+}
+
+.activity-column:nth-child(2) {
+  border-left-color: #3498db;
+}
+
+.activity-column:nth-child(3) {
+  border-left-color: #2ecc71;
 }
 
 .activity-column h3 {
   margin: 0;
   font-size: 16px;
   color: #34495e;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .activity-item {
   display: flex;
   justify-content: space-between;
-  padding: 8px 0;
+  padding: 4px 0;
   border-bottom: 1px solid #eee;
   color: #666;
 }
