@@ -4,6 +4,14 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
+tr[routerLink] {
+  cursor: pointer;
+}
+
+tr[routerLink]:hover {
+  background-color: #f5f5f5;
+}
+
 .clickable-row {
   cursor: pointer;
 }
