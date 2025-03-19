@@ -1,20 +1,47 @@
-.cards-container {
-  display: flex;
-  gap: 20px;
+
+.content {
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-header {
   margin-bottom: 20px;
 }
 
-.card {
+.section-header h2 {
+  color: #2448a5;
+  font-size: 24px;
+  margin: 0;
+}
+
+.activities-container {
+  display: flex;
+  gap: 20px;
+}
+
+.activity-column {
   flex: 1;
-  background: white;
-  border-radius: 6px;
-  padding: 15px;
-  border-left: 4px solid #2448a5;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.activity-column h3 {
+  color: #2448a5;
+  margin: 0 0 20px 0;
+  font-size: 18px;
 }
 
 .card {
+  background: #f8f9fa;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border-left: 4px solid #2448a5;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -22,34 +49,19 @@
 .card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  background-color: #f8f9fa;
+  background-color: #ffffff;
 }
 
 .card h3 {
   margin: 0;
-  font-size: 14px;
-  color: #7b7b7b;
-  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
 }
 
-.card p {
-  margin: 5px 0;
+.card .number {
+  display: block;
+  font-size: 24px;
   color: #2448a5;
-}
-
-.status {
-  display: inline-block;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-}
-
-.status.pending {
-  background-color: #fff3cd;
-  color: #856404;
-}
-
-.status.approved {
-  background-color: #d4edda;
-  color: #155724;
+  font-weight: bold;
+  margin-top: 8px;
 }
