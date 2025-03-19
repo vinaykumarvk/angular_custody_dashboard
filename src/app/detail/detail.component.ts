@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -17,27 +18,27 @@ import { CommonModule } from '@angular/common';
   styles: [`
     .detail-container {
       padding: 20px;
-      background-color: #C6DBFC; /* Retained from original */
-      min-height: 100vh; /* Retained from original */
+      background-color: #C6DBFC;
+      min-height: 100vh;
     }
     .header {
       display: flex;
       align-items: center;
       gap: 20px;
-      margin-bottom: 20px; /* Retained from original */
+      margin-bottom: 20px;
     }
     button {
       padding: 8px 16px;
-      background-color: #2448a5; /* Retained from original */
-      color: white; /* Retained from original */
-      border: none; /* Retained from original */
-      border-radius: 4px; /* Retained from original */
+      background-color: #2448a5;
+      color: white;
+      border: none;
+      border-radius: 4px;
       cursor: pointer;
     }
-    button:hover { /* Retained from original, adjusted selector */
+    button:hover {
       background-color: #1a3578;
     }
-    h1 { /* Retained from original */
+    h1 {
       margin: 0;
       color: #2448a5;
     }
