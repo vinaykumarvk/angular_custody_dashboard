@@ -16,39 +16,39 @@
         <div class="activities-container">
           <div class="activity-column">
             <h3>To be Approved (174)</h3>
-            <div class="activity-item">
+            <div class="activity-item" [routerLink]="['/detail']" role="button">
               <span>Client</span>
               <span>20</span>
             </div>
-            <div class="activity-item">
+            <div class="activity-item" [routerLink]="['/detail']" role="button">
               <span>Client Exchange</span>
               <span>30</span>
             </div>
-            <div class="activity-item">
+            <div class="activity-item" [routerLink]="['/detail']" role="button">
               <span>Client Depository</span>
               <span>1</span>
             </div>
-            <div class="activity-item">
+            <div class="activity-item" [routerLink]="['/detail']" role="button">
               <span>Party</span>
               <span>34</span>
             </div>
-            <div class="activity-item">
+            <div class="activity-item" [routerLink]="['/detail']" role="button">
               <span>Bank Account</span>
               <span>89</span>
             </div>
           </div>
           <div class="activity-column">
             <h3>Processes Done Today</h3>
-            <div class="activity-item">SEBI Message</div>
-            <div class="activity-item">Global settlement</div>
-            <div class="activity-item">Price upload</div>
+            <div class="activity-item" [routerLink]="['/detail']" role="button">SEBI Message</div>
+            <div class="activity-item" [routerLink]="['/detail']" role="button">Global settlement</div>
+            <div class="activity-item" [routerLink]="['/detail']" role="button">Price upload</div>
           </div>
           <div class="activity-column">
             <h3>Processes Due Today</h3>
-            <div class="activity-item">DP instructions</div>
-            <div class="activity-item">MFTS</div>
-            <div class="activity-item">Early Payout Report</div>
-            <div class="activity-item">Fund Obligation Report</div>
+            <div class="activity-item" [routerLink]="['/detail']" role="button">DP instructions</div>
+            <div class="activity-item" [routerLink]="['/detail']" role="button">MFTS</div>
+            <div class="activity-item" [routerLink]="['/detail']" role="button">Early Payout Report</div>
+            <div class="activity-item" [routerLink]="['/detail']" role="button">Fund Obligation Report</div>
           </div>
         </div>
       </div>
@@ -61,15 +61,15 @@
         <!-- Holdings Section -->
         <h3 class="subsection-header">Holdings</h3>
         <div class="cards-container">
-          <div class="card">
+          <div class="card" [routerLink]="['/detail']" role="button">
             <h3>Pending Reconciliation & Valuation</h3>
             <span class="number">64</span>
           </div>
-          <div class="card">
+          <div class="card" [routerLink]="['/detail']" role="button">
             <h3>Unmatched Inventory RDCs</h3>
             <span class="number">8</span>
           </div>
-          <div class="card">
+          <div class="card" [routerLink]="['/detail']" role="button">
             <h3>Positions mismatch OSLs</h3>
             <span class="number">12</span>
           </div>
@@ -78,15 +78,15 @@
         <!-- Trades Section -->
         <h3 class="subsection-header">Trades</h3>
         <div class="cards-container">
-          <div class="card">
+          <div class="card" [routerLink]="['/detail']" role="button">
             <h3>Unswept Trades</h3>
             <span class="number">15</span>
           </div>
-          <div class="card">
+          <div class="card" [routerLink]="['/detail']" role="button">
             <h3>Misport Trades</h3>
             <span class="number">7</span>
           </div>
-          <div class="card">
+          <div class="card" [routerLink]="['/detail']" role="button">
             <h3>Settlement Due</h3>
             <span class="number">23</span>
           </div>
@@ -95,15 +95,15 @@
         <!-- Communication Section -->
         <h3 class="subsection-header">Communication</h3>
         <div class="cards-container">
-          <div class="card">
+          <div class="card" [routerLink]="['/detail']" role="button">
             <h3>Mails Sent</h3>
             <span class="number">64</span>
           </div>
-          <div class="card">
+          <div class="card" [routerLink]="['/detail']" role="button">
             <h3>Mails Not Sent</h3>
             <span class="number">73</span>
           </div>
-          <div class="card">
+          <div class="card" [routerLink]="['/detail']" role="button">
             <h3>Report Failure</h3>
             <span class="number">5</span>
           </div>
@@ -112,11 +112,11 @@
         <!-- Corporate Actions Section -->
         <h3 class="subsection-header">Corporate Actions</h3>
         <div class="cards-container">
-          <div class="card">
+          <div class="card" [routerLink]="['/detail']" role="button">
             <h3>New Event due Today</h3>
             <span class="number">68</span>
           </div>
-          <div class="card">
+          <div class="card" [routerLink]="['/detail']" role="button">
             <h3>Events Payment Due Today</h3>
             <span class="number">62</span>
           </div>
@@ -125,15 +125,15 @@
         <!-- Tickets Section -->
         <h3 class="subsection-header">Tickets</h3>
         <div class="cards-container">
-          <div class="card">
+          <div class="card" [routerLink]="['/detail']" role="button">
             <h3>Tickets Breached Limit</h3>
             <span class="number">27</span>
           </div>
-          <div class="card">
+          <div class="card" [routerLink]="['/detail']" role="button">
             <h3>Tickets closed due today</h3>
             <span class="number">14</span>
           </div>
-          <div class="card">
+          <div class="card" [routerLink]="['/detail']" role="button">
             <h3>Other open tickets</h3>
             <span class="number">31</span>
           </div>
@@ -142,7 +142,7 @@
         <!-- Payments Section -->
         <h3 class="subsection-header">Payments</h3>
         <div class="cards-container">
-          <div class="card">
+          <div class="card" [routerLink]="['/detail']" role="button">
             <h3>Pending Payments</h3>
             <span class="number">42</span>
           </div>
